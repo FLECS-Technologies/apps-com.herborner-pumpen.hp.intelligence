@@ -2,7 +2,7 @@ ARG ARCH
 ARG VERSION
 ARG VARIANT
 
-FROM 529299063686.dkr.ecr.eu-central-1.amazonaws.com/snow-leopard/modbus-connector:${VERSION}
+FROM public.ecr.aws/k3c6y7y4/snow-leopard/modbus-connector:${VERSION}
 
 ARG ARCH
 ARG VERSION
