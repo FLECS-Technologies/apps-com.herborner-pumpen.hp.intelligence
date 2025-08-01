@@ -9,7 +9,16 @@
     "conffiles": [
         "log_conf.yaml:/config/log_conf.yaml:ro"
     ],
-    "ports": [
-        "9261:80"
+    "ports":[
+        "502:5020"
+    ],
+    "env":[
+        "LOGLEVEL=info",
+        "LOGFILE=connector",
+        "MODBUS_PORT=5020",
+        "MODBUS_IP=0.0.0.0"
+    ],
+    "volumes":[
+        "/logs:/var/log/hp"
     ]
 }
