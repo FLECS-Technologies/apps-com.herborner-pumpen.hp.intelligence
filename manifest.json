@@ -14,11 +14,9 @@
     ],
     "env":[
         "LOGLEVEL=info",
-        "LOGFILE=connector",
-        "MODBUS_PORT=5020",
-        "MODBUS_IP=0.0.0.0"
+        "LOGFILE=connector"
     ],
     "volumes":[
-        "/logs:/var/log/hp"
+        "logs:/var/log/hp"
     ]
 }
