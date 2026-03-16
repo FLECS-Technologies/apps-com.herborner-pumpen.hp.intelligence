@@ -6,17 +6,12 @@
     "revision": "0",
     "image": "flecs.azurecr.io/com.herborner-pumpen.hp.intelligence",
     "multiInstance": false,
-    "conffiles": [
-        "log_conf.yaml:/config/log_conf.yaml:ro"
-    ],
-    "ports":[
-        "502:5020"
-    ],
+    "editors": [{  "name": "Core Status Viewer",  "port": 9330,  "supportsReverseProxy": true}],
     "env":[
-        "LOGLEVEL=info",
-        "LOGFILE=connector"
+        "LOGLEVEL=notice",
+        "FLECS_API_ADDRESS=172.21.0.1:8081"
     ],
     "volumes":[
-        "logs:/var/log/hp"
+        "data:/app/data"
     ]
 }
