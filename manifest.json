@@ -13,5 +13,8 @@
     ],
     "volumes":[
         "data:/app/data"
+    ],
+    "ports":[
+        "9333:9330"
     ]
 }
